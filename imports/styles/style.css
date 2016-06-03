@@ -1,0 +1,36 @@
+/* CSS declarations go here */
+body{
+background: #457fca; /* fallback for old browsers */
+}
+
+.todo-title{
+    margin-bottom: 30px;
+}
+.todo-title-text{
+    font: 100%/1.5 "Roboto", Verdana, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 4em;
+    color: #fff;
+}
+
+.task-enter {
+  opacity: 0.01;
+  transform: translate3d(-200px,0,0);
+}
+
+.task-enter.task-enter-active {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+  transition: 400ms linear;
+}
+
+.task-leave {
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
+
+.task-leave.task-leave-active {
+  opacity: 0.01;
+  transform: translate3d(-200px,0,0);
+  transition:400ms linear;
+}
